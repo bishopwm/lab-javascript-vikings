@@ -95,7 +95,13 @@ class War {
         return saxonAttack;
     }
 
-   
+    showStatus(){
+        if(this.vikingArmy.length === 0)
+            return 'Saxons have fought for their lives and survived another day...'
+        if(this.saxonArmy.length === 0)
+            return 'Vikings have won the war of the century!'
+        return 'Vikings and Saxons are still in the thick of battle.'
+    }
 
 }
 
